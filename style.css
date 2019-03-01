@@ -1,0 +1,293 @@
+.container
+{
+    margin-left: 7%;
+}
+
+body
+{
+    background-color: #7f8fa6;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title
+{
+    font-family: Pokemon Hollow;
+    color: #FCCF00;
+    font-size: 40px;
+}
+
+.header
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.pokemonInfo
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 20%;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, color;
+    transition-property: transform, color;
+    will-change: transform;
+}
+
+.pokemonInfo:hover, .pokemonInfo:focus, .pokemonInfo:active
+{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #dcdde1;
+}
+
+.menu
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: 20;
+}
+
+.menu .inner
+{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 570px;
+    height: 55%;
+    padding: 20px 60px;
+    background: #dcdde1;
+    color: #2f3640;
+    transform: translateX(0%);
+    transition-property: transform;
+    transition-duration: 1s;
+    will-change: transform;
+    border-radius: 10px;
+    border: 4px solid #e74c3c;
+}
+
+.menu.open .inner
+{
+    transform: translateX(-100%);
+}
+
+.previewImg
+{
+    width: 15%;
+}
+
+.pokeImg
+{
+    width: 200px;
+    height: 200px;
+}
+
+.pokeInfos
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.number
+{
+    font-size: 4rem;
+}
+
+.text
+{
+    border: none;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+.submit
+{
+    border: none;
+    padding: 10px;
+    border-radius: 6px;
+    font-size: 15px;
+    color: #dcdde1;
+    background: #e74c3c;
+    cursor: pointer;
+}
+
+@font-face 
+{
+    font-family: 'Pokemon Hollow';
+    src: url('fonts/PokemonHollow.ttf') format('truetype');
+}
+
+.itemsInfo
+{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: end;
+    width: 20%;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    overflow: hidden;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform, color;
+    transition-property: transform, color;
+    will-change: transform;
+}
+
+.itemsInfo:hover, .itemsInfo:focus, .itemsInfo:active
+{
+    cursor: pointer;
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+    color: #dcdde1;
+}
+
+.previewName
+{
+    padding-left: 6%;
+}
+
+.itemsImg
+{
+    width: 100px;
+    height: 100px;
+}
+
+.itemsDesciption
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.switch
+{
+    text-transform: uppercase;
+    background: #ffffff;
+    padding: 11px;
+    border: 2px solid #494949;
+    border-radius: 6px;
+    display: inline-block;
+    margin-top: 2%;
+}
+
+.switch:hover
+{
+    background: #f6b93b;
+    border-color: #f6b93b;
+    transition: all 0.4s ease 0s;
+}
+
+.switchLink
+{
+    color: #494949;
+    text-decoration: none;
+}
+
+.switchLink:hover
+{
+    color: #ffffff;
+    transition: all 0.4s ease 0s;
+}
+
+.itemsText
+{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.itemsTextDescription
+{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+.category
+{
+    text-align: center;
+    font-size: 1.3rem;
+}
+
+.menuItems
+{
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 0;
+    z-index: 20;
+}
+
+.menuItems .innerItems
+{
+    position: absolute;
+    top: 20%;
+    left: 0;
+    width: 570px;
+    height: 55%;
+    padding: 20px 60px;
+    background: #dcdde1;
+    color: #2f3640;
+    transform: translateX(0%);
+    transition-property: transform;
+    transition-duration: 1s;
+    will-change: transform;
+    display: grid;
+    justify-content: center;
+    border-radius: 10px;
+    border: 4px solid #e74c3c;
+}
+
+.menuItems.open .innerItems
+{
+    transform: translateX(-100%);
+}
+
+.blocInfos
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+.blocTxt
+{
+    text-align: center;
+    margin-bottom: 5%;
+}
+
+#return
+{
+    margin-left: 4%;
+    margin-bottom: 2%;
+}
+
+.menuList
+{
+    display: inline-grid;
+}
+
+.placement
+{
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 7%;
+}

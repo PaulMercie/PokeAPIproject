@@ -1,4 +1,32 @@
 <?php
+    // // Connection to dataBase
+    // define('DB_HOST', 'localhost');
+    // define('DB_PORT', '3306');
+    // define('DB_NAME', 'pokeAPI');
+    // define('DB_USER', 'root');
+    // define('DB_PASS', 'root');
+
+    // try
+    // {
+    //     // Try to connect to database
+    //     $db = new PDO('mysql:host='.DB_HOST.';dbname='.DB_NAME.';port='.DB_PORT, DB_USER, DB_PASS);
+    // }
+    // catch (Exception $e)
+    // {
+    //     // Failed to connect
+    //     die('Could not connect to database');
+    // }
+
+    // $query = $db->query('SELECT * FROM pokedex');
+    // // Boucle exécuté tant que le fetch renvoie quelque chose
+    // while($user = $query->fetch())
+    // {
+    //     // Affichage de la donnée
+    //     echo '<pre>';
+    //     print_r($user);
+    //     echo '</pre>';
+    // }
+
     // Create API url for count and name
     $url = 'https://pokeapi.co/api/v2/pokemon/?';
     $url .= http_build_query([

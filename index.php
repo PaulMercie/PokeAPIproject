@@ -15,7 +15,7 @@
     <!-- Form -->
 
     <form action="#" method="get">
-        <input class="text" type="text" name="name" placeholder="Enter pokemon name" value="">
+        <input class="text" type="text" name="name" placeholder="Search a pokemon" value="">
         <input class="submit" type="submit" value="Go !">
     </form>
     <button class="switch"><a href="itemsList.php" class="switchLink">Switch to Items</a></button>
@@ -46,8 +46,8 @@
                     <p><strong>Color : </strong><?= ucfirst(pokemonSpecies($infos->name, 10))?></p>
                     <p><strong>Types : </strong><?= pokemonTypes($infos->name, 5)?></p>
                     <p><strong>Abilities : </strong><?= pokemonAbilities($infos->name, 6)?></p>
-                    <p><strong>Height : </strong><?= pokemonHeight($infos->name, 7)?> dm</p>
-                    <p><strong>Weight : </strong><?= pokemonWeight($infos->name, 8)?> hg</p>
+                    <p><strong>Height : </strong><?= (pokemonHeight($infos->name, 7) / 10)?> m</p>
+                    <p><strong>Weight : </strong><?= (pokemonWeight($infos->name, 8) / 10)?> kg</p>
                 </div>
                 <div>
                     <p><strong>Shape : </strong><?= ucfirst(pokemonShape($infos->name, 11))?></p>

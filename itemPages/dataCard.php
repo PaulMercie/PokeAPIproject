@@ -4,31 +4,31 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Poké Balls</title>
-    <link href="style/style.css" rel="stylesheet">
-    <link rel="icon" type="image/png" href="images/pokeball.png" alt="pokeball"/>
+    <title>Data Card</title>
+    <link href="../style/style.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="../images/pokeball.png" alt="pokeball"/>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 </head>
 <body>
 <div class="header">
-    <h1 class="title">Poké Balls</h1>
+    <h1 class="title">Data Card</h1>
     <!-- Form -->
 
     <form action="#" method="get">
-        <input class="text" type="text" name="name" placeholder="Enter item name" value="">
+        <input class="text" type="text" name="name" placeholder="Search a Data Card" value="">
         <input class="submit" type="submit" value="Go !">
     </form>
-    <button class="switch"><a href="index.php" class="switchLink">Switch to Pokédex</a></button>
+    <button class="switch"><a href="../index.php" class="switchLink">Switch to Pokédex</a></button>
 </div>
 <!-- Results -->
-<button class="switch" id="return"><a href="itemsList.php" class="switchLink"><</a></button>
+<button class="switch" id="return"><a href="../itemsList.php" class="switchLink"><</a></button>
 <!-- Integration of all the php file needed  -->
 <?php include 'itemsUrl.php' ?>
-<?php include 'infos.php' ?>
+<?php include '../infos.php' ?>
 <!-- -->
 <div class="container">
 <?php foreach($items as $key => $infos): 
-    if($key < 16)
+    if($key > 484 && $key < 512)
     { ?>
         <div class="itemsInfo menu-toggle">
         <img class="previewImg" src="<?= itemsSprite($infos->name, 2)?>">
@@ -52,6 +52,6 @@
     ?>
 <?php endforeach; ?>
 </div>
-<script src="scripts/scriptItems.js"></script>
+<script src="../scripts/scriptItems.js"></script>
 </body>
 </html>

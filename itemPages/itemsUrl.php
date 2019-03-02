@@ -12,7 +12,7 @@
         global $results;
         // Create cache info
         $cacheKey = md5($url);
-        $cachePath = './cache/'.$cacheKey;
+        $cachePath = '../cache/'.$cacheKey;
         $cacheUsed = false;
 
         // If cache available

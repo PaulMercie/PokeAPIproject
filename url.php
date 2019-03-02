@@ -74,7 +74,7 @@
         $results[$index] = json_decode($results[$index]);
     };
 
-    // Function to create new links for each pokemons
+    // Function to create new URL for each pokemons
     function createNewPokeUrl($pokemonName, $index)
     {
         global $results;
@@ -84,7 +84,7 @@
         createUrl($pokemonUrl, $index);
     }
 
-    // Function to create new links for each species
+    // Function to create new URL for each species
     function createNewSpeciesUrl($speciesPokemon, $index)
     {
         global $results;

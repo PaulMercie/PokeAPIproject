@@ -127,7 +127,15 @@ function pokemonTxt($speciesPokemon, $index)
 {
     global $results;
     createNewSpeciesUrl($speciesPokemon, $index);
-    $pokemonTxt = $results[$index]->flavor_text_entries[1]->flavor_text;
+    // Creation of a condition in order to fix the languages problems
+    if($pokemonTxt = $results[$index]->flavor_text_entries[1]->language->name === "en")
+    {
+        $pokemonTxt = $results[$index]->flavor_text_entries[1]->flavor_text;
+    }
+    else
+    {
+        $pokemonTxt = $results[$index]->flavor_text_entries[2]->flavor_text;
+    }
     return $pokemonTxt;
 }
 

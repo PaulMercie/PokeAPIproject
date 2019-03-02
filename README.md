@@ -1,6 +1,7 @@
 # PokéAPI
 
 We had an assignment in dev class, create something with the PokéAPI. I chose to make a pokédex listing the first generation of pokémon because it is this one that I played with throughout my childhood. In addition, in order to offer a more complete rendering, I added a listing by category of the 950+ items available in the game. This allowed me to develop my skills in php, both in practice and in information retrieval.
+Since style was not the goal of this project, I chose to use just enough to make my work effective and show my work in php.
 
 ## Installation
 

@@ -1,3 +1,13 @@
+/* FOR THE POKEDEX */
+
+/* INSERTION OF THE POLICE FOR THE TITLE IN EACH PAGES */
+
+@font-face 
+{
+    font-family: 'Pokemon Hollow';
+    src: url('fonts/PokemonHollow.ttf') format('truetype');
+}
+
 .container
 {
     margin-left: 7%;
@@ -127,11 +137,7 @@ body
     cursor: pointer;
 }
 
-@font-face 
-{
-    font-family: 'Pokemon Hollow';
-    src: url('fonts/PokemonHollow.ttf') format('truetype');
-}
+/* FOR THE ITEMS PAGES */
 
 .itemsInfo
 {

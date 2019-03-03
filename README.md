@@ -19,8 +19,6 @@ Just download the file and have fun with my site !
 Don't panic! Don't panic! This is a problem that can occur if the request to get the pokémons is too long, to solve the problem, you just need to refresh the page once. (If the menu when you click on the objects or pokémons opens, it means that everything is well loaded).
 The load of the items usually working well.
 
-PS : Unfortunately, I tried to make an ajax request without success due to lack of GET in my code.
-
 ## Features
 
 * Search Bar : Use it to search for the first generation pokémon of your choice.
